@@ -1,7 +1,7 @@
 import { Elysia } from 'elysia'
 
 const app = new Elysia()
-  .post('/test', ({ body }) => {
+  .post('/webhook', ({ body }) => {
     console.log('Corpo recebido:', body)
     return { message: 'Dados recebidos com sucesso!', data: body }
   })
